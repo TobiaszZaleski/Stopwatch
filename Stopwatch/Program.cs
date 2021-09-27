@@ -91,11 +91,14 @@ namespace Stopwatch
                 {
                     break;
                 }
-                else
+                else if (tekst3 == "1")
                 {
                     Console.Clear();
                     continue;
-                }
+                } 
+                else
+                    throw new InvalidOperationException("Taka operacja nie może zostać wykonana, program zostanie zamkniety");
+
             }
         }
     }
