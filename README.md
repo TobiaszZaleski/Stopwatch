@@ -1,2 +1,3 @@
 # Stopwatch
-Just a simple stopwatch with 3 functionalities, counting seconds from start to stop, counting time between start and subsequent "stops", and exiting without crashing.
+Just a simple stopwatch. 
+Type stop after You start the measurement to make another lap time.
