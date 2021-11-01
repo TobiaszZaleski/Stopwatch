@@ -11,7 +11,7 @@ namespace Stopwatch
         static void Main(string[] args)
         {   
             bool Condition = true;
-            var Pomiar = new Stopwatch();
+            var stopwatch = new Stopwatch();
 
 
             while (true)
@@ -24,7 +24,7 @@ namespace Stopwatch
 
                     if (tekst == "Start")
                     {
-                        Pomiar.Start();
+                        stopwatch.Start();
                         break;
                     }
                     else if (tekst == "Zakoncz")
@@ -60,11 +60,11 @@ namespace Stopwatch
 
                     if (tekst2 == "Nastepny")
                     {
-                        Console.WriteLine("Stop Message: " + Pomiar.Stop);
+                        Console.WriteLine("Stop Message: " + stopwatch.Stop);
                     }
                     else if (tekst2 == "Stop")
                     {
-                        Console.WriteLine("Stop Message: " + Pomiar.Stop);
+                        Console.WriteLine("Stop Message: " + stopwatch.Stop);
                         break;
                     }
                     else if (tekst2 == "Zakoncz")
@@ -87,14 +87,14 @@ namespace Stopwatch
                 var tekst3 = Console.ReadLine();
 
 
-                if (tekst3 == "2")
-                {
-                    break;
-                }
-                else if (tekst3 == "1")
+                if (tekst3 == "1")
                 {
                     Console.Clear();
                     continue;
+                }
+                else if (tekst3 == "2")
+                {
+                    break;
                 } 
                 else
                     throw new InvalidOperationException("Taka operacja nie może zostać wykonana, program zostanie zamkniety");
